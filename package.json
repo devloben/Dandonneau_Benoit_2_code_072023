@@ -1,12 +1,12 @@
 {
-  "name": "backend",
+  "name": "mon-vieux-grimoire-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Notation de livres",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "DevloBen",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",

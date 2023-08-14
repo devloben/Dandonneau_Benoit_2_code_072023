@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-// Importation des middleware d'authentification t de gestion des images
+// Importation des middleware d'authentification et de gestion des images
 const auth = require('../middleware/auth')
 const { upload, resizeImage } = require('../middleware/multer-sharp')
 
@@ -9,9 +9,9 @@ const { upload, resizeImage } = require('../middleware/multer-sharp')
 const bookCtrl = require('../controllers/book')
 
 // Définition des routes pour les opérations sur les livres
-router.get('/', bookCtrl.getBooks)                     // Récupérérer la liste des livres
-router.get('/bestrating', bookCtrl.getBestBooks)       // Récupérer les livres ayant la meilleure moyenne
-router.get('/:id', bookCtrl.getBook)                   // Récupérer les détails d'un livre
+router.get('/', bookCtrl.getBooks)                     // obtenir la liste des livres
+router.get('/bestrating', bookCtrl.getBestBooks)       // obtenir les livres ayant la meilleure moyenne
+router.get('/:id', bookCtrl.getBook)                   // obtenir les détails d'un livre
 router.post('/', auth, upload, resizeImage, bookCtrl.createBook)  // Créer un nouveau livre
 router.post('/:id/rating', auth, bookCtrl.rateBook)   // Noter un livre
 router.put('/:id', auth, upload, resizeImage, bookCtrl.updateBook) // Mettre à jour un livre

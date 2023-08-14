@@ -37,7 +37,7 @@ const resizeImage = async (req, res, next) => {
     const normalizedOriginalName = req.file.originalname.normalize('NFD')
     const slug = slugify(normalizedOriginalName, { lower: true })
 
-    // Cration du nom de fichier avec le Slug et l'horodatage
+    // Création du nom de fichier avec le Slug et l'horodatage
     const filename = `${slug}_${Date.now()}.webp`;
     const imagePath = path.join(__dirname, '../images', filename)
 
@@ -50,8 +50,10 @@ const resizeImage = async (req, res, next) => {
     // Mise à jours du nom de fichier dans la requête
     req.file.filename = filename
 
+    // Poursuite du flux de la requête
     next();
   } catch (error) {
+    // En cas d'erreur renvoi d'un message d'erreur
     next(error)
   }
 }

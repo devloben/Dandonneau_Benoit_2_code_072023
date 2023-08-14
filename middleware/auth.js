@@ -15,7 +15,7 @@ module.exports = (req, res, next) => {
       userId: userId
     }
 
-    // Pourquite du flux de la requête
+    // Poursuite du flux de la requête
     next()
 
   } catch(error) {

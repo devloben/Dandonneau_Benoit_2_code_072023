@@ -4,9 +4,9 @@ const mongoose = require('mongoose')
 const bookSchema = mongoose.Schema({ 
   userId : { type: String, required: true },        // Identifiant de l'utilisateur qui crée le livre (obligatoire)
   title : { type: String, required: true },         // Titre du livre (obligatoire)
-  author: { type: String, required: true },         //Auteur du livre (obligatoire)
+  author: { type: String, required: true },         // Auteur du livre (obligatoire)
   imageUrl : { type: String, required: true },      // URL de l'image du livre (obligatoire)
-  year : { type: Number, required: true },          //Année de publication du livre (obligatoire)
+  year : { type: Number, required: true },          // Année de publication du livre (obligatoire)
   genre : { type: String, required: true },         // Genre du livre (obligatoire)
   ratings : [{
     userId : { type: String, required: true },      // Identifiant de l'utilisateur qui note le livre (obligatoire)
