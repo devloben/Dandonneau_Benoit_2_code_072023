@@ -84,7 +84,7 @@ exports.rateBook = async (req, res, next) => {
     if (!book) {
       return res.status(404).json({ message: 'Livre non trouvé !'})
     }
-
+    
     if (userId) {
       // Vérification si l'utilisateur a déjà noté le livre
       const userRating = book.ratings.find(rate => rate.userId === userId)
