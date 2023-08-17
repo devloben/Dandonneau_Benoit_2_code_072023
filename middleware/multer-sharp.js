@@ -36,7 +36,7 @@ const resizeImage = async (req, res, next) => {
       const slug = slugify(normalizedOriginalName, { lower: true })
 
       // Création du nom de fichier avec le Slug et l'horodatage
-      const filename = `${slug}_${Date.now()}.webp`;
+      const filename = `${slug.split('.')[0]}_${Date.now()}.webp`;
       const imagePath = path.join(__dirname, '../images', filename)
 
       // Mise à jour de la mémoire tampon avec l'image compressée
