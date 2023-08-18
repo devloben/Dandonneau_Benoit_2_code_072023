@@ -11,5 +11,5 @@ Projet testé sous node v18.17.0
    - books
    - users
 1. Téléchargez ce repository dans le dossier à côté du front-end
-1. Renomez le fichier `.env.example` en `.env` et compléter les champs avec vos données de connection à la base de données.
+1. Renomez le fichier `.env.example` en `.env` et complétez les champs avec vos données de connection à la base de données.
 1. Rendez-vous dans le dossier backend et faites la commande `npm install` pour installer les dépendances puis `node server` pour lancer le projet.
