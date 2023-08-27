@@ -14,4 +14,4 @@ Projet testé sous node v18.17.0
 1. Renommez le fichier `.env.example` en `.env` et complétez les champs avec vos données de connection à la base de données.
 1. Rendez-vous dans le dossier backend et faites la commande `npm install` pour installer les dépendances puis `node server` pour lancer le projet.
 
-[Copie écran du site Mon Vieux Grimoire](https://github.com/devloben/Dandonneau_Benoit_2_code_072023/blob/main/assets/copie_ecran_mon_vieux_grimoire.png)
+[Copie écran du site Mon Vieux Grimoire](https://raw.githubusercontent.com/devloben/Dandonneau_Benoit_2_code_072023/main/assets/copie_ecran_mon_vieux_grimoire.png)
