@@ -1,5 +1,5 @@
 # Développez le back-end d'un site de notation de livres
-
+Exercice réalisé dans le cadre de la formation ["Web Développeur"](https://openclassrooms.com/fr/paths/717-developpeur-web#path-tabs) proposé par OpenClassRooms en juin 2023.
 
 ## Mon Vieux Grimoire
 
